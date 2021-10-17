@@ -1,0 +1,54 @@
+%Script file:combinationalfile
+%purpose:
+%Implementation of half adder,full adder,half subtractor and full
+%subtaractor using switch case menu
+%Record
+%Date Programmer Regd no. Deescription of change
+%17/01/18 Reeshab Kumar Nayak 1641014037 original script
+%Defintion Variable
+%a=first variable for combination
+%b=second variable for combination
+%s=sum of combination
+%c=carry after combination
+%z=third variable for combination
+%d=diference for combination
+%b=borrow after combination
+%pesudocode
+%1.creat switch menu assign different buttons FA,HA,FS,HS
+%2.Ask the user to input the variables
+%3.Compare the variables
+%4.Display the answer
+clc;
+close all;
+clear all;
+func=menu('Circuits','Half Adder','Full Adder','Half Subtractor','Full Subtractor')
+switch func
+    case 1
+  
+   a=input ('Input the first variable for combination')
+    b=input ('Input the second variable for combination')
+    if(a==0&&b==0)
+        disp('s=0,c=0');
+   elseif(a==0&&b==1)
+    disp('s=0,c=1')
+elseif(a==1&&b==0)
+        disp ('s=1,c=0')
+elseif(a==1&&b==1)
+    disp('s=0,c=1');
+else
+    disp('Nan');
+    end
+    case 2
+      a=input ('Input the first variable for combination')
+    b=input ('Input the second variable for combination')
+    c=input('Input the third  variable for combination')
+    if(a==0&&b==0&&c==0)
+        disp('s=0,c=0');
+   elseif(a==0&&b==1&&c==0)
+    disp('s=1,c=0');
+    elseif(a==0&&b==1&&c==0)
+        disp ('s=1,c=0')
+elseif(a==1&&b==1)
+    disp('s=0,c=1');
+else   
+    
